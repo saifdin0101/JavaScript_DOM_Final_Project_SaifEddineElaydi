@@ -34,6 +34,22 @@ nav div h1 span {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(84, 78, 89);
 }
+.videoo {
+  position: relative;
+  right: 30px;
+}
+.hihi {
+  position: relative;
+  top: -170px;
+  right: -320px;
+  z-index: 2222222222;
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 50%;
+
+}
+
 .btn-1 {
   background-color: rgb(213, 53, 53);
   color: white;
@@ -41,6 +57,11 @@ nav div h1 span {
   padding: 10px;
   border-style: none;
   width: 120px;
+}
+.videoo {
+  font-size: 50px;
+  color: red;
+  z-index: 444444;
 }
 
 .bigDiv {
@@ -113,6 +134,7 @@ nav div h1 span {
   height: 80px;
   width: 700px;
   font-size: 20px;
+  margin-bottom: 93px;
 }
 .mainDiv-3 {
   display: flex;
@@ -130,7 +152,9 @@ nav div h1 span {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  transform: translatey(-100px);
+  position: relative;
+  top: -500;
+
   transform: translateX(50px);
 }
 .mini-3 {
@@ -208,7 +232,6 @@ nav div h1 span {
 .cart-2 {
   height: 322px;
   width: 300px;
-
   box-shadow: -7px 10px 32px -24px rgba(0, 0, 0, 0.83);
   display: flex;
   justify-content: center;
@@ -226,17 +249,11 @@ nav div h1 span {
   border-radius: 50%;
   color: rgb(213, 53, 53);
 }
-.cart-3 {
-  height: 80%;
-  width: 300px;
-  background-color: green;
+.cart-2 i:hover{
+background-color:rgb(213, 53, 53) ;
+color: white;
+transition: 0.4s;
 }
-.cart-4 {
-  height: 80%;
-  width: 300px;
-  background-color: blue;
-}
-
 .bigDiv-4 {
   background-image: url(../images/stats-bg.jpg);
   height: 400px;
@@ -400,6 +417,7 @@ nav div h1 span {
   gap: 20px;
 }
 .inps {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,6 +428,58 @@ nav div h1 span {
 .inps input {
   height: 40px;
   width: 250px;
+  font-size: 16px;
+}
+.inps textarea{
+  font-size: 16px;
+
+
+}
+
+.hihi:after
+{
+content: '';
+position: absolute;
+border:15px solid #fff;
+border-radius: 50%;
+top: -20px;
+left: -20px;
+right: -20px;
+bottom: -20px;
+animation: bloom2 1.5s linear infinite;
+opacity: 0;
+animation-delay: .4s;
+z-index: 1;
+}
+@keyframes bloom1
+{
+0%
+{
+transform: scale(.5);
+}
+50%
+{
+opacity: 1;
+}
+100%
+{
+transform: scale(0.5);
+}
+}
+@keyframes bloom2
+{
+0%
+{
+transform: scale(.5);
+}
+50%
+{
+opacity: 1;
+}
+100%
+{
+transform: scale(1.1);
+}
 }
 .btn-2 {
   background-color: rgb(206, 18, 18);
@@ -514,7 +584,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-.footer-1{
+.footer-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,20 +595,18 @@ footer {
 .footer-1 i {
   color: red;
   font-size: 20px;
-  
 }
-.ft-1{
+.ft-1 {
   display: flex;
   gap: 10px;
 }
-.ft-2{
+.ft-2 {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-
 }
 
-.ft-3{
+.ft-3 {
   display: flex;
   padding-top: 20px;
   gap: 10px;
@@ -546,18 +614,18 @@ footer {
 .ft-3 i {
   border-radius: 50%;
   color: gray;
-  border: 1px solid gray; 
+  border: 1px solid gray;
   padding: 10px;
 }
-.ft-3 i:hover{
-   color: red;
-   border-color: red;
-   transition: 0.4s;
+.ft-3 i:hover {
+  color: red;
+  border-color: red;
+  transition: 0.4s;
 }
-.footer-2{
+.footer-2 {
   height: 150px;
   width: 80%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
