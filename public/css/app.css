@@ -748,11 +748,6 @@ footer {
 
 /* caroseul */
 
-* {
-  margin: 0;
-  padding: 0;
-
-}
 
 
 
@@ -763,7 +758,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
 .carousel {
   display: flex;
   transition: 0.5s;
@@ -794,7 +788,7 @@ footer {
   left:0 ;
 }
 
-.indicators-grp{
+.indicators-grp {
   width: 100%;
   position: absolute;
   bottom: 10%;
@@ -802,17 +796,18 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
 }
-.indicator{
-  
-  padding: 10px;
+
+.indicator {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: rgb(211, 212, 212);
-  
+  cursor: pointer;
 }
-.activeIndicator{
-  background-color: rgb(206, 18, 18);
+
+.indicator.active {
+  background: rgb(206, 18, 18); 
 }
 .cars-1{
   height: 300px;
