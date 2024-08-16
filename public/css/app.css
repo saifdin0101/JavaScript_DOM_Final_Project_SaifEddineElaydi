@@ -885,3 +885,19 @@ footer {
   left: 1320px;
   bottom: 700px;
 }
+.up{
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #eae9e9;
+  position: fixed;
+  top: 650px;
+  right: 20px;
+  
+
+  
+ 
+}
+
+@media (max-width: 430px){
+}
