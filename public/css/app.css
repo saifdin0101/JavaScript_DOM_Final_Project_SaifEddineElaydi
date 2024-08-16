@@ -884,3 +884,22 @@ footer {
   
   
 }
+.vv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(400px);
+  padding: 150px 0;
+  position: absolute;
+  z-index: 5555555555555555;
+  backdrop-filter: blur(30px); 
+  background-color: rgba(5, 4, 4, 0.2); 
+  display: none;
+  
+
+  
+}
+
+.vid {
+  height: 500px;
+}

@@ -137,3 +137,10 @@ updateIndicators();
 });
 
 
+let watch = document.querySelector(".watch");
+let vid = document.querySelector(".vv");
+
+watch.addEventListener("click", () => {
+    vid.style.display = "block"
+});
+
