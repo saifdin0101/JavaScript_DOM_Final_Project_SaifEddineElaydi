@@ -34,7 +34,8 @@ nav div h1 {
 nav div h1 span {
   color: red;
 }
-.secDiv {
+.secDiv label{
+  margin-left: 25px;
 }
 .secDiv a {
   text-decoration: none;
@@ -885,18 +886,20 @@ footer {
   left: 1320px;
   bottom: 700px;
 }
-.up{
+.up {
   font-size: 22px;
   padding: 15px;
   border-radius: 50%;
   background-color: #eae9e9;
   position: fixed;
-  top: 650px;
-  right: 20px;
-  
+  bottom: 20px; 
+  right: 20px;  
+  cursor: pointer;
+  display: none; 
+}
 
-  
- 
+.up:hover {
+  background-color: #dcdcdc;
 }
 
 @media (max-width: 430px){

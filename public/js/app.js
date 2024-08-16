@@ -147,10 +147,19 @@ watch.addEventListener("click", () => {
     closee.addEventListener("click",(e)=>{
       vid.style.display="none"
       nav.style.display="flex"
-
-
     })
-   
-    
 });
-
+let upButton = document.querySelector('.up');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    upButton.style.display = 'block';
+  } else {
+    upButton.style.display = 'none';
+  }
+});
+upButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
