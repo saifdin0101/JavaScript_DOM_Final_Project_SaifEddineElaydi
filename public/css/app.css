@@ -888,18 +888,24 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  transform: translateX(400px);
-  padding: 150px 0;
+  transform: translateX(380px);
+  padding: 100px 0;
   position: absolute;
-  z-index: 5555555555555555;
+  z-index: 55;
   backdrop-filter: blur(30px); 
   background-color: rgba(5, 4, 4, 0.2); 
   display: none;
-  
-
+}
+.vid {
+  height: 600px;
+  width: 80%;
+  margin-left: 155px;
   
 }
-
-.vid {
-  height: 500px;
+.close{
+  position: absolute;
+  font-size: 40px;
+  color: aqua;
+  left: 1320px;
+  bottom: 700px;
 }

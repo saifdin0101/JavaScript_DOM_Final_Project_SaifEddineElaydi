@@ -136,11 +136,21 @@ updateIndicators();
 updateIndicators();
 });
 
-
+let nav = document.querySelector("nav")
 let watch = document.querySelector(".watch");
 let vid = document.querySelector(".vv");
-
+let bigdiv =document.querySelector(".bigDiv")
+let closee =document.querySelector(".close")
 watch.addEventListener("click", () => {
     vid.style.display = "block"
+    nav.style.display="none"
+    closee.addEventListener("click",(e)=>{
+      vid.style.display="none"
+      nav.style.display="flex"
+
+
+    })
+   
+    
 });
 
