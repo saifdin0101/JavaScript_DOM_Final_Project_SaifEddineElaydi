@@ -34,11 +34,14 @@ nav div h1 {
 nav div h1 span {
   color: red;
 }
-
+.secDiv{
+  
+}
 .secDiv a {
-  padding: 0px 25px;
+  
   text-decoration: none;
   color: rgb(84, 78, 89);
+  margin-left: 25px;
 }
 .labell {
   color: rgb(84, 78, 89);
@@ -330,10 +333,27 @@ transition: 0.4s;
   border-radius: 10px;
 }
 .card-1:hover {
-  height: 620px;
-  width: 450px;
-  transition: 0.3s;
-  overflow: hidden;
+transform: scale(1.05);
+  transition: 0.4s;
+}
+.card-1:hover .zzz{
+  display: flex;
+}
+.zzz{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.13);
+  width: 40px;
+  row-gap: 20px;
+  position: absolute;
+  top: 30px;
+  left: 370px;
+  padding: 20px 5px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
 }
 .card-1 img {
   width: 100%;
@@ -849,4 +869,18 @@ footer {
   justify-content: center;
   flex-direction: column;
   row-gap: 20px;
+}
+
+#contact:hover{
+  transition: 2s;
+  color: black;
+  width: 10px;
+  border-bottom: 1px solid red;
+}
+.secDiv a:hover{
+  color: black;
+  width: 10px;
+  border-bottom: 1px solid red;
+  
+  
 }
